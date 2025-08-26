@@ -3,7 +3,6 @@ using travel_agency_wform.Services;
 using travel_agency_wform.Services.Observers;
 using travel_agency_wform.Services.Commands;
 using travel_agency_wform.Forms;
-using travel_agency_wform.UI;
 
 namespace travel_agency_wform
 {
@@ -21,8 +20,6 @@ namespace travel_agency_wform
         public Form1()
         {
             InitializeComponent();
-
-            ModernUiStyler.Apply(this);
             
             _agencyService = new TravelAgencyService();
             _dataNotifier = DataChangeNotifier.Instance;
