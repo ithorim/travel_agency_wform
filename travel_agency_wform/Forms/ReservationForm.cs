@@ -1,7 +1,6 @@
 using travel_agency_wform.Models;
 using travel_agency_wform.Services;
 using travel_agency_wform.Services.Commands;
-using travel_agency_wform.UI;
 
 namespace travel_agency_wform.Forms
 {
@@ -21,8 +20,6 @@ namespace travel_agency_wform.Forms
             _commandInvoker = CommandInvoker.Instance;
             _clientId = clientId;
             _packageId = packageId;
-
-            ModernUiStyler.Apply(this);
             
             // Set up numeric up down control
             numericUpDownNumberOfTravelers.Minimum = 1;
